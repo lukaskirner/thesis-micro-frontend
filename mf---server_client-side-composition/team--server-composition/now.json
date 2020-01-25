@@ -1,0 +1,10 @@
+{
+	"version": 2,
+	"name": "server-side-composition",
+	"builds": [
+		{ "src": "/api/tailor-serverless.js", "use": "@now/node" }
+	],
+	"routes": [
+		{ "src": "/(.*)", "methods": ["GET"], "dest": "/api/tailor-serverless.js" }
+	]
+}

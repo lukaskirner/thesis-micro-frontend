@@ -1,0 +1,27 @@
+.image-viewer {
+
+  .image {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    position: relative;
+    margin: 0 auto;
+
+    button {
+      position: absolute;
+      cursor: pointer;
+      bottom: 0;
+
+      &.btn-left {
+        left: 0;
+      }
+
+      &.btn-right {
+        right: 0;
+      }
+    }
+  }
+}

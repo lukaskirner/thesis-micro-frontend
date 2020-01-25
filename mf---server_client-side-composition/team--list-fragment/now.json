@@ -1,0 +1,40 @@
+{
+	"version": 2,
+	"name": "server-rendered--list-fragment",
+	"builds": [
+		{ "src": "/api/**/*.py", "use": "@now/python" },
+		{ "src": "/static/css/*.css", "use": "@now/static" }
+	],
+	"routes": [
+		{   
+			"src": "/",
+			"methods": ["GET"], 
+			"dest": "/api/handler.py", 
+			"headers": { 
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET",
+				"Access-Control-Expose-Headers": "link"
+			}
+		},
+		{   
+			"src": "/men",
+			"methods": ["GET"], 
+			"dest": "/api/handler.py", 
+			"headers": { 
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET",
+				"Access-Control-Expose-Headers": "link"
+			}
+		},
+		{   
+			"src": "/woman",
+			"methods": ["GET"], 
+			"dest": "/api/handler.py", 
+			"headers": { 
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET",
+				"Access-Control-Expose-Headers": "link"
+			}
+		}
+	]
+}

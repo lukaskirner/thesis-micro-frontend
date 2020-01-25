@@ -1,0 +1,28 @@
+<nav>
+	<ul>
+		<li class="{{men_active}}">
+			<a href="/men">Herren</a>
+		</li>
+		<li class="{{woman_active}}">
+			<a href="/woman">Damen</a>
+		</li>
+		<li class="basket">
+			<a href="https://www.inovex.de">Warenkorb: <span id="basket_count">{{basket_count}}</span></a>
+		</li>
+	</ul>
+	<script>
+		console.log("outer hi")
+		window.onload = function() {
+			console.log("hi")
+			document.addEventListener("basket_update", function() {
+				var basket = localStorage.getItem("basket")
+				if (basket) {
+					document.getElementById("basket_count").innerHTML = JSON.parse(basket).length
+				}
+			});
+
+			var event = new CustomEvent("basket_update");
+			document.dispatchEvent(event)
+		}
+	</script>
+</nav>

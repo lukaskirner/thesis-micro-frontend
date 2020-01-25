@@ -1,0 +1,155 @@
+[
+    {
+        "id": 0,
+        "name": "Gestreiftes Oberteil",
+        "price": 2230,
+        "gender": "woman",
+        "info": {
+            "collection": "Hansis Kurze Sachen",
+            "color": "Schwarz-Weiß gestreift",
+            "size": ["L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1566511716292-948ffc3c60ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=912&q=80",
+            "https://images.unsplash.com/photo-1566607346219-ba08c885d132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=928&q=80"
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Komischer Hut",
+        "price": 100,
+        "gender": "woman",
+        "info": {
+            "collection": "Seps Komische Sachen",
+            "color": "Orange/Rot (Transparent)",
+            "size": []
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1564636020977-4e1b464bc90d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1564637242909-7271ec5e7d32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Kleid mit Punkten",
+        "price": 1000,
+        "gender": "woman",
+        "info": {
+            "collection": "Rosis Kleider",
+            "color": "Schwarz-Weiß gepunktet",
+            "size": ["S", "L", "M", "XL", "XXL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1563984906-be4b8dc076d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=991&q=80",
+            "https://images.unsplash.com/photo-1563984879-5805ab6c7cde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Jeans Jacke",
+        "price": 2000,
+        "gender": "woman",
+        "info": {
+            "collection": "Rudolfs",
+            "color": "Blau-Weiß",
+            "size": ["L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1556755211-4f954474e494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=881&q=80",
+            "https://images.unsplash.com/photo-1556755211-40b3588fe14e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=881&q=80"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "T-Shirt mit rotem Punkt vorne",
+        "price": 100,
+        "gender": "woman",
+        "info": {
+            "collection": "Rudolfs",
+            "color": "Schwarz",
+            "size": ["L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1563701669499-db355052b3ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1563701642643-b3cbc236078e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80",
+            "https://images.unsplash.com/photo-1563701650290-78ccee84b959?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Buntes Top",
+        "price": 500,
+        "gender": "woman",
+        "info": {
+            "collection": "Hansis Kurze Sachen",
+            "color": "Schwarz mit Farbmix",
+            "size": ["L", "M"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1523983254932-c7e6571c9d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1419&q=80",
+            "https://images.unsplash.com/photo-1523912818431-d3ec7b488f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Rotes T-Shirt",
+        "price": 600,
+        "gender": "woman",
+        "info": {
+            "collection": "Basic",
+            "color": "Rot",
+            "size": ["S", "L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1556793521-f04f45ac9c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1556793521-ec4b34e6545e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1556793521-e0454b213055?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1556793522-27d2c018d721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Top Kleid Combo",
+        "price": 6000,
+        "gender": "woman",
+        "info": {
+            "collection": "Hansis Kurze Sachen",
+            "color": "Rosa/Rot",
+            "size": ["S", "L", "M"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1560727749-cc261b23794c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            "https://images.unsplash.com/photo-1560727749-75f1b5b7ebfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Weiße Jacke",
+        "price": 7000,
+        "gender": "men",
+        "info": {
+            "collection": "Hansis Winter Collection",
+            "color": "Weiß",
+            "size": ["L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1542838077-7fb322b21b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80",
+            "https://images.unsplash.com/photo-1542838077-5fd2ba553bbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Buntes T-Shirt",
+        "price": 700,
+        "gender": "men",
+        "info": {
+            "collection": "Hansis Kurze Sachen",
+            "color": "Schwarz/Bunt gestreift",
+            "size": ["S", "L", "M", "XL"]
+        },
+        "images": [
+            "https://images.unsplash.com/photo-1554785306-96347ef528fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "https://images.unsplash.com/photo-1554785306-c1cfe70e1ab2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        ]
+    }
+]

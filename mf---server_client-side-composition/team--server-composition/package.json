@@ -1,0 +1,11 @@
+{
+  "name": "team--composition-layer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/tailor.js"
+  },
+  "dependencies": {
+    "node-tailor": "^3.9.2"
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "version": 2,
+    "name": "mf---backend-service",
+    "builds": [
+        { "src": "/api/**/*.json", "use": "@now/static" },
+        { "src": "/api/**/*.go", "use": "@now/go" }
+    ],
+    "routes": [
+        {   
+            "src": "/",
+            "methods": ["GET"], 
+            "dest": "/api/handler.go", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" }
+        },
+        { 
+            "src": "/data", 
+            "methods": ["GET"], 
+            "dest": "/api/data/products.json", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } 
+        },
+        { 
+            "src": "/men", 
+            "methods": ["GET"], 
+            "dest": "/api/men/handler.go", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } 
+        },
+        { 
+            "src": "/woman", 
+            "methods": ["GET"], 
+            "dest": "/api/woman/handler.go", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } 
+        },
+        { 
+            "src": "/products/([^/]+)", 
+            "methods": ["GET"], 
+            "dest": "/api/products/handler.go?id=$1", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } 
+        },
+        { 
+            "src": "/discover/([^/]+)", 
+            "methods": ["GET"], 
+            "dest": "/api/discover/handler.go?id=$1", 
+            "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } 
+        },
+        { 
+            "src": "/basket", 
+            "methods": ["GET", "POST"], 
+            "dest": "/api/basket/handler.go", 
+            "headers": { 
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Methods": "GET, POST" 
+            } 
+        }
+    ]
+}

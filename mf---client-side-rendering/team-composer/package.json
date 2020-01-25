@@ -1,0 +1,24 @@
+{
+  "name": "team-composer",
+  "private": true,
+  "version": "0.0.1",
+  "description": "team-composer",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "now": "yarn build && now",
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve --port 3000",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@ionic/core": "4.11.0"
+  },
+  "devDependencies": {
+    "@stencil/core": "1.7.1"
+  }
+}

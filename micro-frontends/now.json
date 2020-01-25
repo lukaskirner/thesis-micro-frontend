@@ -1,0 +1,22 @@
+{
+	"version": 2,
+	"name": "micro-frontends",
+	"builds": [
+		{ "src": "/static/*.html", "use": "@now/static" },
+		{ "src": "/static/*.txt", "use": "@now/static" },
+		{ "src": "/static/css/*.css", "use": "@now/static" },
+		{ "src": "/static/js/*.js", "use": "@now/static" }
+	],
+	"routes": [
+		{   
+			"src": "/",
+			"methods": ["GET"], 
+			"dest": "/static/index.html"
+		},
+		{   
+			"src": "/robots.txt",
+			"methods": ["GET"], 
+			"dest": "/static/robots.txt"
+		}
+	]
+}

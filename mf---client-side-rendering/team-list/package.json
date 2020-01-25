@@ -1,0 +1,34 @@
+{
+  "name": "team-list",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/team-list/team-list.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "now": "yarn build && now",
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve --port 3002",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "1.7.1",
+    "@types/node": "^12.11.7"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stencil/sass": "1.0.1",
+    "axios": "0.19.0"
+  }
+}

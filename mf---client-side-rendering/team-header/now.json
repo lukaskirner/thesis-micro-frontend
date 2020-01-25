@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "client-side-rendering--team-header",
+  "builds": [
+    { "src": "/dist/team-header/*.js", "use": "@now/static" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET"
+      },
+      "dest": "/"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.product-info-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .image-viewer {
+    flex: 1;
+  }
+
+  .info-board {
+    flex: 1;
+
+    .basket-slot {
+      margin-top: 10px;
+    }
+
+    .shipping-info {
+      font-size: 12px;
+    }
+  }
+}

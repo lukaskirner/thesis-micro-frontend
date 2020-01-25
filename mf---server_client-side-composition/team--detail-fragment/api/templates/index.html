@@ -1,0 +1,50 @@
+<div class="detail">
+	<div class="product-info-wrapper">
+		<div class="image-viewer">
+			<div class="image-viewer">
+				<div class="image" style="background-image: url({{product.images[0]}});">
+					<button class="btn-left">prev</button>
+					<button class="btn-right">next</button>
+				</div>
+			</div>
+		</div>
+		<div class="info-board">
+			<h2>{{product.name}}</h2>
+			<div class="collection">Collection: {{product.info.collection}}</div>
+			<div class="color">Farbe: {{product.info.color}}</div>
+			<div class="price"><b>{{product.price}} €</b> inkl. MwSt.</div>
+			<div class="basket"><button onclick="addToBasket()">Zum Warenkorb hinzufügen</button></div>
+			<div class="shipping-info"><b>Standard Lieferung:</b> <i>Kostenlos</i></div>
+		</div>
+	</div>
+	<div class="discover">
+		<ul>
+			{% for discover_item in discover_items %}
+				<li>
+					<a href="/detail/{{discover_item.id}}">
+						<div style="background-image: url({{discover_item.images[0]}});">
+							<p>{{discover_item.name}}</p>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<script>
+		function addToBasket() {
+			var newBasket = []
+			var basket = localStorage.getItem('basket')
+			if (basket) {
+				newBasket = JSON.parse(basket)
+			}
+
+			var id = window.location.href.split('/').pop()
+			newBasket.push(id)
+			localStorage.setItem('basket', JSON.stringify(newBasket))
+
+			// fire event
+			var event = new CustomEvent("basket_update");
+			document.dispatchEvent(event)
+		}
+	</script>
+</div>

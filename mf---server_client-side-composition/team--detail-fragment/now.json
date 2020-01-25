@@ -1,0 +1,34 @@
+{
+	"version": 2,
+	"name": "server-rendered--detail-fragment",
+	"builds": [
+		{ "src": "/api/handler.py", "use": "@now/python" },
+		{ "src": "/static/css/*.css", "use": "@now/static" },
+		{ "src": "/static/js/*.js", "use": "@now/static" }
+	],
+	"routes": [
+		{   
+			"src": "/",
+			"methods": ["GET"], 
+			"dest": "/api/handler.py", 
+			"headers": { 
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET",
+				"Access-Control-Expose-Headers": "link"
+			}
+		},
+		{   
+			"src": "/detail/(.*)",
+			"methods": ["GET"], 
+			"dest": "/api/handler.py", 
+			"headers": { 
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET",
+				"Access-Control-Expose-Headers": "link"
+			}
+		}
+	],
+	"env": {
+		"BACKEND_URL": "https://mf-backend-service.lukaskirner.now.sh"
+	}
+}

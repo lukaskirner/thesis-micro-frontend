@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "spa-composition--team-product",
+  "builds": [
+    { "src": "/dist/manifest.json", "use": "@now/static" },
+    { "src": "/dist/**/*.js", "use": "@now/static" },
+    { "src": "/dist/**/*.js.map", "use": "@now/static" },
+    { "src": "/dist/**/*.css", "use": "@now/static" },
+    { "src": "/dist/**/*.css.map", "use": "@now/static" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "methods": ["GET"],
+      "dest": "/",
+      "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" }
+    }
+  ]
+}

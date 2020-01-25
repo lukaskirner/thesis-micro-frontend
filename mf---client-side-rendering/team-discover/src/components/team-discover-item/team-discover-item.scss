@@ -1,0 +1,20 @@
+a {
+  color: black;
+
+  div {
+    width: 125px;
+    height: 200px;
+    margin: 3px;
+    background-color: gray;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    p {
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
